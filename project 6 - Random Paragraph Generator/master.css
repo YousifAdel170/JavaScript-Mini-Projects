@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #0854c0, #f74813);
+}
+
+.card {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .card {
+    width: 300px;
+  }
+}
+
+label {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.row div {
+  padding: 10px;
+}
+
+.row input {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #ff0000;
+  font-size: 16px;
+  outline: none;
+}
+
+.row button {
+  background-color: #e46141;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.row button:hover {
+  background-color: #ff0000;
+}
+
+.row .clear {
+  background-color: #333;
+}
+
+.row .clear:hover {
+  background-color: black;
+}
+
+.row p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+}
