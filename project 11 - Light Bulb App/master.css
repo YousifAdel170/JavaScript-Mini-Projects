@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+
+body.on {
+  background: radial-gradient(#555, #111);
+}
+
+.wire {
+  position: absolute;
+  left: calc(50% - 2px);
+  bottom: 50%;
+  height: 60vh;
+  width: 4px;
+  background-color: #000;
+  z-index: 1;
+}
+
+.bulb {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.bulb i {
+  font-size: 4rem;
+  color: #444;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+  -moz-transform: translate(-50%, -50%) rotate(180deg);
+  -ms-transform: translate(-50%, -50%) rotate(180deg);
+  -o-transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.switch {
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: gray 0 10px 15px -5px;
+}
+
+.switch i {
+  font-size: 1.5rem;
+}
+
+.on .bulb i {
+  color: #ffd700;
+}
+
+.on .switch {
+  background-color: #4caf50;
+}
